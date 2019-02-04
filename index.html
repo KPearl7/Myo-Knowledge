@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="A myo-knowledge test for manual practitioners">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Your Myo Quiz</title>
+	<link href="style.css" rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
+</head>
+
+<body>
+
+	<header>
+		<h1>Your Myo-Knowledge</h1>
+		<h2>A Quiz for Manual Therapists</h2>
+		<button id="start-button">Begin</button>
+  </header>
+
+  <main class="quiz-content" role="main">
+    <section class="quizContent">
+      <form>
+        <legend><h1>Question</h1></legend>
+        <div class="answers"></div>
+        <input id="submit-button" type="submit" value="Submit"/>
+      </form>
+    </section>
+    <div class="passFail" id="correctAnswer">
+      <p>Strong myo-game, way to go baby!</p>
+      <img src="https://runbritchickrun.files.wordpress.com/2013/04/funny-baby-excercise-picture-3.jpg">
+      <button class="continue">Continue</button>
+    </div>
+    <div class="passFail" id="incorrectAnswer"> 
+      <p>Weak! You need to work that out!</p>
+      <p id="answerSolution">The right answer is</p>
+      <img src="incorrect.png">
+      <button class="continue">Continue</button>
+    </div>
+    <div class="status-info">
+      <div id="question-info"><p>Question:</p>
+      </div>
+      <div id="score-info"><p>Score:</p>
+      </div>
+    </div>
+    </main>
+
+  
+  <section class="lastPage" role="lastPage">
+    <h1>Congratulations on completing the quiz!</h1>
+    <p>Your Score is</p>
+    <button id="restart-button">Try Again</button>
+  </section>
+  
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+      <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
